@@ -30,6 +30,9 @@ return require('packer').startup(function()
     use "justinmk/vim-sneak"
     use "chaoren/vim-wordmotion"
 
+    -- Edition plugins
+    use "preservim/nerdcommenter"
+
     -- Git integration
     use "airblade/vim-rooter"
     use "lambdalisue/gina.vim"
@@ -50,5 +53,4 @@ return require('packer').startup(function()
     use "liuchengxu/vim-which-key"
     use "sbdchd/neoformat"
     use "kyazdani42/nvim-tree.lua"
-
 end)

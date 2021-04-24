@@ -29,6 +29,7 @@ let g:which_key_map['q'] = [ ':BufferClose'               , 'close file' ]
 let g:which_key_map['e'] = [ ':NvimTreeFindFile'          , 'tree on current' ]
 let g:which_key_map['E'] = [ ':NvimTreeToggle'            , 'toggle tree' ]
 let g:which_key_map['m'] = [ ':make'                      , 'make' ]
+let g:which_key_map['c'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
 
 let g:which_key_map['b'] = {
             \ 'name' : '+buffers',
