@@ -13,9 +13,18 @@ vim.cmd "set noshowmode"
 vim.g.mapleader = " "
 vim.g.maplocalleader = "<CR>"
 
+vim.o.updatetime = 300
+vim.o.timeoutlen = 100
+
 -- Load configs
 require("plugins")
 require("keys")
+require("lsp")
+require("highlights")
+
+-- LSP configs
+require("lsp.clangd")
+require("lsp.sumneko")
 
 -- Plugin configs
 require("plugins.barbar")
