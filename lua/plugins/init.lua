@@ -39,6 +39,12 @@ return require('packer').startup(function()
     use "glepnir/lspsaga.nvim"
     use "kabouzeid/nvim-lspinstall"
 
+    -- Autocomplete
+    use "hrsh7th/nvim-compe"
+    use "hrsh7th/vim-vsnip"
+    use "hrsh7th/vim-vsnip-integ"
+    use "rafamadriz/friendly-snippets"
+
     -- "IDE"-like features
     use "romgrk/barbar.nvim"
     use "liuchengxu/vim-which-key"

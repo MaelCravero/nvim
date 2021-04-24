@@ -28,6 +28,8 @@ require("lsp.sumneko")
 
 -- Plugin configs
 require("plugins.barbar")
+require("plugins.compe")
+require("plugins.vsnip")
 
 vim.cmd "source ~/.config/nvim/vimscript/airline.vim"
 vim.cmd "source ~/.config/nvim/vimscript/gina.vim"
