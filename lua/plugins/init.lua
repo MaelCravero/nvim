@@ -53,4 +53,5 @@ return require('packer').startup(function()
     use "liuchengxu/vim-which-key"
     use "sbdchd/neoformat"
     use "kyazdani42/nvim-tree.lua"
+    use "akinsho/nvim-toggleterm.lua"
 end)
