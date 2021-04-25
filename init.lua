@@ -31,6 +31,7 @@ require("plugins.compe")
 require("plugins.dashboard")
 require("plugins.gitsigns")
 require("plugins.toggleterm")
+require("plugins.treesitter")
 require("plugins.vsnip")
 
 vim.cmd "source ~/.config/nvim/vimscript/airline.vim"
