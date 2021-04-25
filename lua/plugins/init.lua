@@ -50,6 +50,7 @@ return require('packer').startup(function()
     use "rafamadriz/friendly-snippets"
 
     -- "IDE"-like features
+    use "glepnir/dashboard-nvim"
     use "romgrk/barbar.nvim"
     use "liuchengxu/vim-which-key"
     use {

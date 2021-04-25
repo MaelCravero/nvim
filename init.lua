@@ -28,6 +28,7 @@ require("lsp.sumneko")
 -- Plugin configs
 require("plugins.barbar")
 require("plugins.compe")
+require("plugins.dashboard")
 require("plugins.gitsigns")
 require("plugins.toggleterm")
 require("plugins.vsnip")

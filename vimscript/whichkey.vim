@@ -21,6 +21,8 @@ autocmd  FileType which_key set laststatus=0 noshowmode signcolumn=no
 let g:which_key_use_floating_win = 0
 
 " Leader mappings
+let g:which_key_map['s'] = [ ':SessionSave'                 , 'save session' ]
+let g:which_key_map['S'] = [ ':SessionLoad'                 , 'load session' ]
 let g:which_key_map['q'] = [ ':BufferClose'                 , 'close file' ]
 let g:which_key_map['e'] = [ ':NvimTreeFindFile'            , 'tree on current' ]
 let g:which_key_map['E'] = [ ':NvimTreeToggle'              , 'toggle tree' ]
