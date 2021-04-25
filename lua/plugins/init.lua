@@ -36,6 +36,7 @@ return require('packer').startup(function()
     -- Git integration
     use "airblade/vim-rooter"
     use "lambdalisue/gina.vim"
+    use {"lewis6991/gitsigns.nvim", requires = {"nvim-lua/plenary.nvim"}}
 
     -- LSP support
     use "neovim/nvim-lspconfig"

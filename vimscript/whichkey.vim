@@ -44,7 +44,8 @@ let g:which_key_map['f'] = {
             \ 'name' : '+find',
             \ 'f' : [':Telescope find_files',       'files'],
             \ 'g' : [':Telescope find_files',       'git files'],
-            \ 'b' : [':Telescope file_browser',     'browse'],
+            \ 'b' : [':Telescope current_buffer_fuzzy_find', 'buffer find'],
+            \ 'B' : [':Telescope file_browser',     'browse'],
             \ 'G' : [':Telescope live_grep',        'grep'],
             \ 'R' : [':Telescope reloader',         'reload'],
             \ 'q' : [':Telescope quickfix',         'quickfix list'],
@@ -68,14 +69,26 @@ let g:which_key_map['g']['l'] = {
             \ 's' : [':Telescope git_status',       'status'],
             \}
 
+let g:which_key_map['h'] = {
+            \ 'name' : '+hunks',
+            \ 's' : [':Gitsigns stage_hunk',        'stage'],
+            \ 'u' : [':Gitsigns undo_stage_hunk',   'undo stage'],
+            \ 'r' : [':Gitsigns reset_hunk',        'reset'],
+            \ 'R' : [':Gitsigns reset_buffer',      'reset buffer'],
+            \ 'v' : [':Gitsigns preview_hunk',      'preview'],
+            \ 'b' : [':Gitsigns blame_line',        'blame'],
+            \ 'n' : [':Gitsigns next_hunk',         'next'],
+            \ 'p' : [':Gitsigns prev_hunk',         'prev'],
+            \}
+
 let g:which_key_map['l'] = {
-            \ 'a' : [':Telescope lsp_code_actions',         'action'],
-            \ 'n' : [':Lspsaga diagnostic_jump_next',       'next'],
-            \ 'p' : [':Lspsaga diagnostic_jump_prev',       'prev'],
-            \ 's' : ['Telescope lsp_document_symbols',      'symbols'],
-            \ 'S' : ['Telescope lsp_workspace_symbols',     'workspace symbols'],
-            \ 'd' : ['Telescope lsp_document_diagnostics',  'diagnostics'],
-            \ 'D' : ['Telescope lsp_workspace_diagnostics', 'workspace diagnostics'],
+            \ 'a' : [':Telescope lsp_code_actions',             'action'],
+            \ 'n' : [':Lspsaga diagnostic_jump_next',           'next'],
+            \ 'p' : [':Lspsaga diagnostic_jump_prev',           'prev'],
+            \ 's' : [':Telescope lsp_document_symbols',         'symbols'],
+            \ 'S' : [':Telescope lsp_workspace_symbols',        'workspace symbols'],
+            \ 'd' : [':Telescope lsp_document_diagnostics',     'diagnostics'],
+            \ 'D' : [':Telescope lsp_workspace_diagnostics',    'workspace diagnostics'],
             \}
 
 " Register maps
