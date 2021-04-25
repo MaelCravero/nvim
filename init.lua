@@ -11,7 +11,6 @@ vim.cmd "set noshowcmd"
 vim.cmd "set noshowmode"
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = "<CR>"
 
 vim.o.updatetime = 300
 vim.o.timeoutlen = 100

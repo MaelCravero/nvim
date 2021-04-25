@@ -51,7 +51,12 @@ return require('packer').startup(function()
     -- "IDE"-like features
     use "romgrk/barbar.nvim"
     use "liuchengxu/vim-which-key"
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+    }
     use "sbdchd/neoformat"
     use "kyazdani42/nvim-tree.lua"
     use "akinsho/nvim-toggleterm.lua"
+
 end)
