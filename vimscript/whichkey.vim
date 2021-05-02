@@ -84,9 +84,11 @@ let g:which_key_map['h'] = {
             \}
 
 let g:which_key_map['l'] = {
+            \ 'name' : '+lsp',
             \ 'a' : [':Telescope lsp_code_actions',             'action'],
-            \ 'n' : [':Lspsaga diagnostic_jump_next',           'next'],
-            \ 'p' : [':Lspsaga diagnostic_jump_prev',           'prev'],
+            \ 'r' : [':Lspsaga rename',                         'rename'],
+            \ 'f' : [':Lspsaga lsp_finder',                     'finder'],
+            \ 'p' : [':Lspsaga preview_definition',             'preview definition'],
             \ 's' : [':Telescope lsp_document_symbols',         'symbols'],
             \ 'S' : [':Telescope lsp_workspace_symbols',        'workspace symbols'],
             \ 'd' : [':Telescope lsp_document_diagnostics',     'diagnostics'],

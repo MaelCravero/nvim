@@ -3,11 +3,17 @@ vim.cmd("nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>")
 vim.cmd("nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>")
 vim.cmd("nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>")
 vim.cmd("nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>")
+
 vim.cmd("nnoremap <silent> ca :Lspsaga code_action<CR>")
+vim.cmd("nnoremap <silent> cd :Lspsaga show_line_diagnostics<CR>")
+vim.cmd("nnoremap <silent> cc :Lspsaga show_cursor_diagnostics<CR>")
+
 vim.cmd("nnoremap <silent> K :Lspsaga hover_doc<CR>")
--- vim.cmd('nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>')
+vim.cmd('nnoremap <silent> <C-k> :Lspsaga signature_help<CR>')
+
 vim.cmd("nnoremap <silent> <C-p> :Lspsaga diagnostic_jump_prev<CR>")
 vim.cmd("nnoremap <silent> <C-n> :Lspsaga diagnostic_jump_next<CR>")
+
 -- scroll down hover doc or scroll in definition preview
 vim.cmd(
     "nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>")
@@ -35,3 +41,8 @@ require"lspsaga".init_lsp_saga {
     infor_sign = "",
     code_action_prompt = {enable = true, sign = false, virtual_text = true}
 }
+
+capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.completion.completionItem.resolveSupport =
+    {properties = {'documentation', 'detail', 'additionalTextEdits'}}

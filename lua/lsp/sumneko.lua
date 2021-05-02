@@ -16,6 +16,7 @@ local sumneko_binary = sumneko_root_path .. "/bin/" .. system_name ..
                            "/lua-language-server"
 
 require("lspconfig").sumneko_lua.setup({
+    capabilities = capabilities,
     cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
     -- An example of settings for an LSP server.
     --    For more options, see nvim-lspconfig

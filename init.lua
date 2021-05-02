@@ -24,6 +24,7 @@ require("highlights")
 -- LSP configs
 require("lsp.clangd")
 require("lsp.sumneko")
+require("lsp.rust_analyzer")
 
 -- Plugin configs
 require("plugins.barbar")
