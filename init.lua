@@ -27,6 +27,7 @@ require("lsp.sumneko")
 require("lsp.rust_analyzer")
 
 -- Plugin configs
+require("plugins.autopairs")
 require("plugins.barbar")
 require("plugins.compe")
 require("plugins.dashboard")

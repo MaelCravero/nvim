@@ -47,6 +47,7 @@ return require('packer').startup(function()
     use "hrsh7th/nvim-compe"
     use "hrsh7th/vim-vsnip"
     use "rafamadriz/friendly-snippets"
+    use "windwp/nvim-autopairs"
 
     -- "IDE"-like features
     use "glepnir/dashboard-nvim"
