@@ -17,3 +17,11 @@ let g:neoformat_enabled_ocaml = ['ocamlformat']
 " Set implementation or interface flag for Eliom
 autocmd BufEnter *.eliomi let g:neoformat_ocaml_ocamlformat['args'] = ['--enable-outside-detected-project', '--format-invalid-files=auto', '--name', '"%:p"', '--intf', '-']
 autocmd BufEnter *.eliom let g:neoformat_ocaml_ocamlformat['args'] = ['--enable-outside-detected-project', '--format-invalid-files=auto', '--name', '"%:p"', '--impl', '-']
+
+let g:neoformat_cuda_clangformat = {
+            \ 'exe': 'clang-format',
+            \ 'no_append': 1,
+            \ 'stdin': 1,
+            \ }
+
+let g:neoformat_enabled_cuda = ['clangformat']
