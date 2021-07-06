@@ -25,6 +25,8 @@ require("highlights")
 require("lsp.clangd")
 require("lsp.sumneko")
 require("lsp.rust_analyzer")
+require("lsp.pyright")
+require("lsp.ocamllsp")
 
 -- Plugin configs
 require("plugins.autopairs")

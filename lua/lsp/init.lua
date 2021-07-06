@@ -9,7 +9,7 @@ vim.cmd("nnoremap <silent> cd :Lspsaga show_line_diagnostics<CR>")
 vim.cmd("nnoremap <silent> cc :Lspsaga show_cursor_diagnostics<CR>")
 
 vim.cmd("nnoremap <silent> K :Lspsaga hover_doc<CR>")
-vim.cmd('nnoremap <silent> <C-k> :Lspsaga signature_help<CR>')
+vim.cmd('nnoremap <silent> <C-S-k> :Lspsaga signature_help<CR>')
 
 vim.cmd("nnoremap <silent> <C-p> :Lspsaga diagnostic_jump_prev<CR>")
 vim.cmd("nnoremap <silent> <C-n> :Lspsaga diagnostic_jump_next<CR>")
