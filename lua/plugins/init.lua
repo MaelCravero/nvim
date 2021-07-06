@@ -19,7 +19,7 @@ return require('packer').startup(function()
     use "morhetz/gruvbox"
     use "kyazdani42/nvim-web-devicons"
     use "vim-airline/vim-airline"
-    use "Yggdroot/indentLine"
+    -- use "Yggdroot/indentLine"
     use "lukas-reineke/indent-blankline.nvim"
 
     -- Basic tweaks
@@ -31,7 +31,8 @@ return require('packer').startup(function()
     use "chaoren/vim-wordmotion"
 
     -- Edition plugins
-    use "preservim/nerdcommenter"
+    -- use "preservim/nerdcommenter"
+    use "terrortylor/nvim-comment"
 
     -- Git integration
     use "airblade/vim-rooter"

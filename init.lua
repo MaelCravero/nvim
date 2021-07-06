@@ -31,6 +31,7 @@ require("lsp.ocamllsp")
 -- Plugin configs
 require("plugins.autopairs")
 require("plugins.barbar")
+require("plugins.comment")
 require("plugins.compe")
 require("plugins.dashboard")
 require("plugins.gitsigns")
@@ -43,6 +44,7 @@ vim.cmd "source ~/.config/nvim/vimscript/airline.vim"
 vim.cmd "source ~/.config/nvim/vimscript/gina.vim"
 vim.cmd "source ~/.config/nvim/vimscript/indentline.vim"
 vim.cmd "source ~/.config/nvim/vimscript/neoformat.vim"
+-- vim.cmd "source ~/.config/nvim/vimscript/nerdcommenter.vim"
 vim.cmd "source ~/.config/nvim/vimscript/quickscope.vim"
 vim.cmd "source ~/.config/nvim/vimscript/sneak.vim"
 -- vim.cmd "source ~/.config/nvim/vimscript/whichkey.vim"
