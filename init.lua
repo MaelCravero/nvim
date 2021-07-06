@@ -35,6 +35,7 @@ require("plugins.gitsigns")
 require("plugins.toggleterm")
 require("plugins.treesitter")
 require("plugins.vsnip")
+require("plugins.whichkey")
 
 vim.cmd "source ~/.config/nvim/vimscript/airline.vim"
 vim.cmd "source ~/.config/nvim/vimscript/gina.vim"
@@ -42,4 +43,4 @@ vim.cmd "source ~/.config/nvim/vimscript/indentline.vim"
 vim.cmd "source ~/.config/nvim/vimscript/neoformat.vim"
 vim.cmd "source ~/.config/nvim/vimscript/quickscope.vim"
 vim.cmd "source ~/.config/nvim/vimscript/sneak.vim"
-vim.cmd "source ~/.config/nvim/vimscript/whichkey.vim"
+-- vim.cmd "source ~/.config/nvim/vimscript/whichkey.vim"

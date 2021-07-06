@@ -45,7 +45,7 @@ let g:which_key_map['b'] = {
 let g:which_key_map['f'] = {
             \ 'name' : '+find',
             \ 'f' : [':Telescope find_files',       'files'],
-            \ 'g' : [':Telescope find_files',       'git files'],
+            \ 'g' : [':Telescope git_files',        'git files'],
             \ 'b' : [':Telescope current_buffer_fuzzy_find', 'buffer find'],
             \ 'B' : [':Telescope file_browser',     'browse'],
             \ 'G' : [':Telescope live_grep',        'grep'],

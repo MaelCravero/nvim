@@ -53,7 +53,7 @@ return require('packer').startup(function()
     use "glepnir/dashboard-nvim"
     use "nvim-treesitter/nvim-treesitter"
     use "romgrk/barbar.nvim"
-    use "liuchengxu/vim-which-key"
+    use "folke/which-key.nvim"
     use {
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
