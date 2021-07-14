@@ -31,8 +31,8 @@ return require('packer').startup(function()
     use "chaoren/vim-wordmotion"
 
     -- Edition plugins
-    -- use "preservim/nerdcommenter"
-    use "terrortylor/nvim-comment"
+    use "preservim/nerdcommenter"
+    -- use "terrortylor/nvim-comment"
 
     -- Git integration
     use "airblade/vim-rooter"
