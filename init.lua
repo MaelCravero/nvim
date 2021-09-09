@@ -5,6 +5,7 @@ vim.cmd "source ~/.vimrc"
 
 vim.cmd "colorscheme gruvbox"
 vim.cmd "set termguicolors"
+vim.cmd "set guifont=DejaVuSansCode:h9"
 vim.cmd "set background=dark"
 vim.cmd "set cursorline"
 vim.cmd "set noshowcmd"
@@ -27,6 +28,7 @@ require("lsp.sumneko")
 require("lsp.rust_analyzer")
 require("lsp.pyright")
 require("lsp.ocamllsp")
+require("lsp.jdtls")
 
 -- Plugin configs
 require("plugins.autopairs")

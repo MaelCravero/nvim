@@ -5,13 +5,13 @@ require("which-key").setup {
         -- the presets plugin, adds help for a bunch of default keybindings in Neovim
         -- No actual key bindings are created
         presets = {
-            operators = true, -- adds help for operators like d, y, ...
-            motions = true, -- adds help for motions
-            text_objects = true, -- help for text objects triggered after entering an operator
-            windows = true, -- default bindings on <c-w>
-            nav = true, -- misc bindings to work with windows
-            z = true, -- bindings for folds, spelling and others prefixed with z
-            g = true -- bindings for prefixed with g
+            operators = false, -- adds help for operators like d, y, ...
+            motions = false, -- adds help for motions
+            text_objects = false, -- help for text objects triggered after entering an operator
+            windows = false, -- default bindings on <c-w>
+            nav = false, -- misc bindings to work with windows
+            z = false, -- bindings for folds, spelling and others prefixed with z
+            g = false -- bindings for prefixed with g
         }
     },
     icons = {
@@ -117,12 +117,12 @@ local mappings = {
     },
     g = {
         name = "+git",
-        a = {"<cmd>Gina add %", "add"},
-        b = {"<cmd>Gina blame", "add"},
-        c = {"<cmd>Gina commit", "add"},
-        C = {"<cmd>Gina commit --amend", "add"},
-        s = {"<cmd>Gina status", "add"},
-        l = {"<cmd>Gina log", "log"},
+        a = {"<cmd>Gina add %<cr>", "add"},
+        b = {"<cmd>Gina blame<cr>", "add"},
+        c = {"<cmd>Gina commit<cr>", "add"},
+        C = {"<cmd>Gina commit --amend<cr>", "add"},
+        s = {"<cmd>Gina status<cr>", "add"},
+        l = {"<cmd>Gina log<cr>", "log"},
         S = {"<cmd>Telescope git_status<cr>", "list status"},
         B = {"<cmd>Telescope git_branches<cr>", "branches"},
         t = {

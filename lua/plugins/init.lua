@@ -43,6 +43,7 @@ return require('packer').startup(function()
     use "neovim/nvim-lspconfig"
     use "glepnir/lspsaga.nvim"
     use "kabouzeid/nvim-lspinstall"
+    use "ray-x/lsp_signature.nvim"
 
     -- Autocomplete
     use "hrsh7th/nvim-compe"
@@ -62,5 +63,11 @@ return require('packer').startup(function()
     use "sbdchd/neoformat"
     use "kyazdani42/nvim-tree.lua"
     use "akinsho/nvim-toggleterm.lua"
+
+    -- More filetypes
+    use "tikhomirov/vim-glsl"
+
+    -- use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
+    use 'iamcco/markdown-preview.nvim'
 
 end)
